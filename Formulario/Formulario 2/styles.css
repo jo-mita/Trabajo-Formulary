@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d0d0d0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* ── Página A4 ── */
+.page {
+  background: #fff;
+  width: 595px;
+  min-height: 842px;
+  position: relative;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  padding: 0 40px 0 40px;
+  overflow: hidden;
+}
+
+/* ── Etiqueta vertical derecha ── */
+.side-label {
+  position: absolute;
+  right: -68px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 6.5px;
+  color: #666;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* ════════════════════════
+   HEADER DECORATIVO
+════════════════════════ */
+.header-deco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 10px 0;
+  position: relative;
+}
+
+/* Flechas izquierda (verdes apuntando derecha) */
+.arrows-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 26px solid transparent;
+  border-bottom: 26px solid transparent;
+  border-left: 22px solid #39ff14;
+  margin-right: -8px;
+  opacity: 1;
+}
+
+.arrow:nth-child(1) { opacity: 0.35; }
+.arrow:nth-child(2) { opacity: 0.65; }
+.arrow:nth-child(3) { opacity: 1; }
+
+/* Texto superior derecha */
+.top-text {
+  font-size: 7px;
+  color: #888;
+  text-align: right;
+  max-width: 220px;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+/* Puntos decorativos arriba derecha */
+.dots-grid {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(circle, #bbb 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+
+.dots-top {
+  top: 0;
+  right: -40px;
+}
+
+/* ════════════════════════
+   TÍTULO
+════════════════════════ */
+.titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 46px;
+  color: #111;
+  letter-spacing: 10px;
+  line-height: 1.05;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* ════════════════════════
+   BADGE GIMNASIO
+════════════════════════ */
+.gym-badge {
+  background: #39ff14;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 0;
+  width: 260px;
+  margin: 0 auto 20px auto;
+}
+
+/* ════════════════════════
+   BLOQUE NOMBRE
+════════════════════════ */
+.bloque-nombre {
+  margin-bottom: 4px;
+}
+
+.label-negro {
+  background: #111;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 3px 10px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.nombre-linea {
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 2px;
+  height: 18px;
+}
+
+/* ════════════════════════
+   CAMPOS DEL FORMULARIO
+════════════════════════ */
+.campo-fila {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  gap: 16px;
+}
+
+.borde-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.campo-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.8px;
+  min-width: 150px;
+  padding: 7px 0;
+  flex-shrink: 0;
+}
+
+/* ── Radio buttons ── */
+.radios {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.radio-item input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 1.5px solid #666;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.radio-item input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #39ff14;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ════════════════════════
+   TEXTO LEGAL
+════════════════════════ */
+.texto-legal {
+  margin-top: 14px;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.texto-legal p {
+  font-size: 7.5px;
+  color: #555;
+  line-height: 1.75;
+}
+
+/* ════════════════════════
+   FECHA Y FIRMA
+════════════════════════ */
+.fecha-firma {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 0 10px 0;
+}
+
+.ff-item {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.ff-label {
+  font-size: 10px;
+  color: #333;
+  min-width: 34px;
+}
+
+.ff-linea {
+  width: 190px;
+  border-bottom: 1px solid #555;
+}
+
+/* ════════════════════════
+   FOOTER
+════════════════════════ */
+.footer-wrap {
+  position: relative;
+  margin-top: 6px;
+}
+
+/* Puntos decorativos abajo izquierda */
+.dots-bottom {
+  position: absolute;
+  bottom: 50px;
+  left: -40px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(circle, #bbb 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+
+/* Flechas derecha (apuntando derecha) */
+.arrows-right {
+  position: absolute;
+  right: -30px;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.arrow-r {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 18px solid #39ff14;
+  margin-bottom: -8px;
+}
+
+.arrow-r:nth-child(1) { opacity: 1; }
+.arrow-r:nth-child(2) { opacity: 0.65; }
+.arrow-r:nth-child(3) { opacity: 0.35; }
+
+/* Fila GRACIAS + LOGO */
+.footer-mid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.gracias {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  color: #39ff14;
+  letter-spacing: 4px;
+}
+
+.logo-box {
+  width: 52px;
+  height: 44px;
+  background: #39ff14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+/* Barra negra inferior */
+.footer-bar {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 4px;
+  padding: 11px 0;
+  margin: 0 -40px;
+}

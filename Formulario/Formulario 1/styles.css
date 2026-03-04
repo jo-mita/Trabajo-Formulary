@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/*  Página A4  */
+.page {
+  background: #fff;
+  width: 100%;
+ min-height: 100vh;
+  position: relative;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  display: flex;
+}
+
+/*  Barra lateral roja  */
+.sidebar {
+  width: 18px;
+  background: #7a2535;
+  flex-shrink: 0;
+}
+
+/*  Contenido principal */
+.content {
+  flex: 1;
+  padding: 26px 26px 26px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Etiqueta vertical derecha */
+.side-label {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 7px;
+  color: #7a2535;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*  Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #7a2535;
+  padding-bottom: 8px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.hamburger span {
+  display: block;
+  width: 18px;
+  height: 2.5px;
+  background: #7a2535;
+  border-radius: 1px;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #7a2535;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.web-badge {
+  background: #7a2535;
+  color: #fff;
+  font-size: 7.5px;
+  padding: 4px 8px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+/* Grupos de campo */
+.form-group {
+  margin-bottom: 13px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 8.5px;
+  color: #807d7d;
+  margin-bottom: 3px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #7a2535;
+  outline: none;
+  font-size: 10px;
+  padding: 3px 2px;
+  color: #aaa;
+  font-family: 'Source Sans 3', sans-serif;
+  background: transparent;
+  font-style: italic;
+}
+
+input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Grid de dos columnas  */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 13px;
+}
+
+.row .form-group {
+  margin-bottom: 0;
+}
+
+/* Tipo de Afiliación */
+.afiliacion {
+  margin-bottom: 13px;
+}
+
+.afiliacion .main-label {
+  display: block;
+  font-size: 8.5px;
+  color: #444;
+  margin-bottom: 1opx;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.checkboxes {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #555;
+}
+
+.checkbox-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #c89090;
+  background: #f5e8e8;
+  cursor: pointer;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.checkbox-item input[type="checkbox"]:checked {
+  background: #7a2535;
+  border-color: #7a2535;
+}
+
+/* Campo inline (Titular)  */
+.inline-field {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-bottom: 13px;
+}
+
+.inline-field label {
+  font-size: 8.5px;
+  color: #444;
+  font-weight: 600;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.inline-field input {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #7a2535;
+  outline: none;
+  font-size: 10px;
+  padding: 3px 2px;
+  color: #aaa;
+  font-family: 'Source Sans 3', sans-serif;
+  background: transparent;
+}
+
+/*  Bloques de fecha  */
+.fecha-bloques {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 4px;
+}
+
+.bloque {
+  width: 22px;
+  height: 16px;
+  background: #f5e8e8;
+  border: 1px solid #e8d0d0;
+  border-radius: 1px;
+}
+
+.separator {
+  font-size: 13px;
+  color: #7a2535;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0 1px;
+}
+
+/*  Bloques de código */
+.codigo-bloques {
+  display: flex;
+  gap: 3px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.codigo-bloque {
+  width: 16px;
+  height: 16px;
+  background: #f5e8e8;
+  border: 1px solid #e8d0d0;
+  border-radius: 1px;
+}
+
+/* Email con @ */
+.email-wrapper {
+  position: relative;
+}
+
+.email-wrapper .at {
+  position: absolute;
+  left: 2px;
+  bottom: 4px;
+  font-size: 10px;
+  color: #7a2535;
+  font-weight: 600;
+}
+
+.email-wrapper input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #7a2535;
+  outline: none;
+  font-size: 10px;
+  padding: 3px 2px 3px 14px;
+  color: #aaa;
+  font-family: 'Source Sans 3', sans-serif;
+  background: transparent;
+}
+
+/* Footer */
+.form-footer {
+  margin-top: 18px;
+  border-top: 1px solid #e0c8c8;
+  padding-top: 10px;
+}
+
+.footer-text {
+  font-size: 7.5px;
+  color: #777;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.logo-box {
+  width: 54px;
+  height: 44px;
+  border: 1.5px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.firma-area {
+  text-align: center;
+}
+
+.firma-line {
+  width: 160px;
+  border-bottom: 1px solid #7a2535;
+  margin-bottom: 4px;
+}
+
+.firma-area span {
+  font-size: 8px;
+  color: #777;
+  letter-spacing: 0.5px;
+}

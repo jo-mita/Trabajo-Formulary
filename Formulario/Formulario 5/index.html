@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario 5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- TÍTULO PRINCIPAL -->
+  <div class="main-header">
+    <h1>APPLICATION FOR PERMIT</h1>
+  </div>
+
+  <!-- FILA SUPERIOR: Applying For A + Identification Information -->
+  <div class="top-row">
+
+    <!-- Applying For A -->
+    <div class="box applying-box">
+      <div class="box-title">Applying For A <span class="hint">(Check any that apply)</span></div>
+      <div class="check-row">
+        <label class="chk"><input type="checkbox"> Permit</label>
+        <label class="chk"><input type="checkbox"> ID Card</label>
+        <label class="chk"><input type="checkbox"> Renewal</label>
+        <label class="chk"><input type="checkbox"> Replacement</label>
+      </div>
+    </div>
+
+    <!-- Identification Information -->
+    <div class="box id-box">
+      <div class="box-title">Identification Information</div>
+      <div class="id-grid">
+        <span>Driver license?</span>
+        <label class="chk"><input type="checkbox"> Yes</label>
+        <label class="chk"><input type="checkbox"> No</label>
+
+        <span>Learner permit?</span>
+        <label class="chk"><input type="checkbox"> Yes</label>
+        <label class="chk"><input type="checkbox"> No</label>
+
+        <span>Non-driver ID Card?</span>
+        <label class="chk"><input type="checkbox"> Yes</label>
+        <label class="chk"><input type="checkbox"> No</label>
+      </div>
+      <p class="id-text">The objectives will be based on how you gain sales by acquiring and keeping customers. A marketing strategy helps on making good messages with the right field of marketing approaches in order to have a good outcome of your sales and marketing activities.</p>
+    </div>
+
+    <!-- Foto -->
+    <div class="photo-box">PHOTO HERE</div>
+
+  </div>
+
+  <!-- Your Personal -->
+  <div class="section-header">Your Personal</div>
+  <div class="personal-section">
+    <div class="field-row">
+      <label>Full Last Name</label>
+      <div class="field-line long"></div>
+    </div>
+    <div class="field-row">
+      <label>Full First Name</label>
+      <div class="field-line long"></div>
+    </div>
+    <div class="field-row dob-row">
+      <label>Date of birth</label>
+      <div class="field-line short"></div>
+      <span class="hint-sm">mm / dd / yyyy</span>
+      <label>Gender</label>
+      <label class="chk"><input type="checkbox"> Male</label>
+      <label class="chk"><input type="checkbox"> Female</label>
+    </div>
+    <div class="field-row">
+      <label>Nationality</label>
+      <div class="field-line medium"></div>
+    </div>
+  </div>
+
+  <!-- ID card number and Details -->
+  <div class="section-header">ID card number and Details</div>
+  <div class="id-details-section">
+    <div class="id-blocks-row">
+      <div class="id-blocks">
+        <div class="id-block"></div><div class="id-block"></div><div class="id-block"></div>
+        <div class="id-block"></div><div class="id-block"></div><div class="id-block"></div>
+        <div class="id-block"></div><div class="id-block"></div><div class="id-block"></div>
+        <div class="id-block"></div><div class="id-block"></div><div class="id-block"></div>
+      </div>
+      <span class="id-hint">enter the identification number it appears on the card</span>
+    </div>
+    <div class="field-row">
+      <label>Date of Expiration:</label>
+      <div class="field-line short"></div>
+      <label>Type of License:</label>
+      <div class="field-line short"></div>
+      <label>Out-of-State License ID No:</label>
+      <div class="field-line short"></div>
+    </div>
+  </div>
+
+  <!-- Two column section: Your Personal Details + Contact Details -->
+  <div class="two-col-section">
+
+    <div class="left-col">
+      <div class="section-header">Your Personal Details</div>
+      <div class="field-row">
+        <label>Hight</label>
+        <div class="field-line xshort"></div>
+        <span class="hint-sm">ft / inch</span>
+        <label>Eye color</label>
+        <div class="field-line xshort color-field"></div>
+      </div>
+      <div class="field-row">
+        <label>Email Address: (optional)</label>
+        <div class="field-line medium"></div>
+      </div>
+      <div class="field-row">
+        <label>Status:</label>
+        <label class="chk"><input type="checkbox"> Single</label>
+        <label class="chk"><input type="checkbox"> Married</label>
+        <label class="chk"><input type="checkbox"> Devorced</label>
+      </div>
+      <div class="field-row">
+        <label>Others</label>
+        <div class="field-line long"></div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="section-header">Contact Details</div>
+      <div class="field-row">
+        <label>Home Phone No.</label>
+        <div class="field-line long"></div>
+      </div>
+      <div class="field-row">
+        <label>Mobile Phone No.</label>
+        <div class="field-line long"></div>
+      </div>
+      <div class="field-row">
+        <label>Fax No.</label>
+        <div class="field-line short"></div>
+        <label>Work Phone No.</label>
+        <div class="field-line short"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Two column: Address  + Address where you get mail -->
+  <div class="two-col-section">
+
+    <div class="left-col">
+      <div class="section-header">Address where you live</div>
+      <div class="field-row">
+        <label>Unit No.</label>
+        <div class="field-line xshort"></div>
+        <label>Street No.</label>
+        <div class="field-line xshort"></div>
+        <label>Street</label>
+        <div class="field-line short"></div>
+      </div>
+      <div class="field-row">
+        <label>Town/City</label>
+        <div class="field-line short"></div>
+        <label>State</label>
+        <div class="field-line xshort"></div>
+        <label>Post Code</label>
+        <div class="field-line xshort"></div>
+      </div>
+      <div class="field-row">
+        <label>Country</label>
+        <div class="field-line medium"></div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="section-header">Address where you get your mail</div>
+      <p class="hint-sm">(This address will appear on your document)</p>
+      <div class="field-row addr-blocks">
+        <div class="field-line xshort"></div>
+        <div class="field-line xshort"></div>
+        <div class="field-line xshort"></div>
+        <div class="field-line xshort"></div>
+      </div>
+      <div class="field-row">
+        <label>Has your mailing address changed?</label>
+        <label class="chk"><input type="checkbox"> Yes</label>
+        <label class="chk"><input type="checkbox"> No</label>
+      </div>
+      <div class="field-row">
+        <label>What is the change and the reason for it</label>
+      </div>
+      <div class="field-row">
+        <label class="hint-sm">Other change: (new license class, wrong date of birth, etc.)?</label>
+        <div class="field-line long"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Social Security Number -->
+  <div class="section-header">Social security number (SSN)*</div>
+  <div class="ssn-section">
+    <div class="ssn-left">
+      <div class="ssn-blocks">
+        <div class="id-block"></div><div class="id-block"></div><div class="id-block"></div>
+        <span class="sep">-</span>
+        <div class="id-block"></div><div class="id-block"></div>
+        <span class="sep">-</span>
+        <div class="id-block"></div><div class="id-block"></div><div class="id-block"></div><div class="id-block"></div>
+      </div>
+    </div>
+    <div class="ssn-right">
+      <p class="ssn-text">Putting your strategy into action is how your marketing plan should work. Marketing budgets will be set, at the same time it will also show you how you're going to work with your targets, it maybe through networking, advertising etc. Having the perfect timing with your activities to fit your customers buying cycles will help you saving money and maximizing sales. The marketing plan should be innovativ</p>
+    </div>
+  </div>
+
+  <!-- Preguntas Yes/No -->
+  <div class="questions-section">
+    <div class="question-row">
+      <span>1. Do you wear glasses or contact lenses?</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+    <div class="question-row">
+      <span>2. Do you have a physical or mental condition which requires that you take medication?</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+    <div class="question-row">
+      <span>3. Have you ever had a seizure, blackout , or loss of consciousness?</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+    <div class="question-row">
+      <span>4. Do you have a physical condition which requires you to use special equipment in order to work?</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+    <div class="question-row">
+      <span>5. Have you ever had a seizure, blackout , or loss of consciousness?</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+    <div class="question-row">
+      <span>6. Have you been convicted withen the past ten years in this state or elsewhere of any offense</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+    <div class="question-row">
+      <span>7. Have you resulting from your operation of, or involving , a motor vehicle?</span>
+      <div class="yn"><label class="chk"><input type="checkbox"> Yes</label><label class="chk"><input type="checkbox"> No</label></div>
+    </div>
+  </div>
+
+  <!-- Terms + Signature -->
+  <div class="bottom-row">
+    <div class="terms-box">
+      <div class="terms-title">Terms &amp; Conditions</div>
+      <p>Improvement should be measured regularly and assessed in order for you to know what's beneficial and what is not. This will help you set new targets.</p>
+    </div>
+    <div class="signature-box">
+      <div class="sig-title">Signature:</div>
+      <div class="sig-area"></div>
+      <div class="sig-field-row">
+        <label>Date:</label>
+        <div class="field-line medium"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
